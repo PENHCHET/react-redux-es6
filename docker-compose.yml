@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  client:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./public:/usr/src/app/public
+      - ./src:/usr/src/app/src
+      - ./package.json:/usr/src/app/package.json
+    environment:
+      REACT_APP_BDB_SERVER_URL: "http://localhost:9984"
+      REACT_APP_BDB_WS_URL: "ws://localhost:9985"
+    ports:
+      - "8080:8080"
+    command: npm start
