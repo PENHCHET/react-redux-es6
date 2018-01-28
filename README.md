@@ -1,10 +1,10 @@
-# React Redux ES6
+# បង្កើតនូវវេបសាយជាមួយនឹង React និង Redux ក្នុង ES6
 
 ### ត្រូវដំឡើង docker និង docker-compose
 
-### Run this project by using the docker-compose 
+### ដើម្បី Run this project by using the docker-compose 
 
-```linux
+```
   
   sudo docker-compose up
   
