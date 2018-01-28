@@ -1,19 +1,6 @@
-# បង្កើតនូវវេបសាយជាមួយនឹង React និង Redux ក្នុង ES6
+# បង្កើតនូវវេបសាយជាមួយនឹង React និង Redux ក្នុង ES6 [Building Applications in React and Redux in ES6]
 
-### ត្រូវដំឡើង docker និង docker-compose
-
-### ដើម្បី Run this project by using the docker-compose 
-
-```
-  
-  sudo docker-compose up
-  
-```
-
-
-# Starter Kit for [Building Applications in React and Redux in ES6]
-
-## Get Started
+## តោះចាំផ្តើម
 1. **Install [Node 6](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
 2. **Clone this repository.** - `git clone https://github.com/PENHCHET/react-redux-es6.git`
 3. **Make sure you're in the directory you just created.** - `cd react-redux-es6`
