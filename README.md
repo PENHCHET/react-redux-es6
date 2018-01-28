@@ -1,4 +1,4 @@
-# បង្កើតនូវវេបសាយជាមួយនឹង React និង Redux ក្នុង ES6 [Building Applications in React and Redux in ES6]
+# បង្កើតនូវកម្មវិធីជាមួយនឹង React និង Redux ក្នុង ES6 [Building Applications in React and Redux in ES6]
 
 ## តោះចាំផ្តើម
 1. **Install [Node 6](https://nodejs.org)**. Need to run multiple versions of Node? Use [nvm](https://github.com/creationix/nvm) or [nvm-windows](https://github.com/coreybutler/nvm-windows)
