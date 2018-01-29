@@ -5,26 +5,19 @@ import UserItem from './UserItem'
 class User extends React.Component {
     constructor(props) {
         super(props);
-        // this.componentDidMount = this.componentDidMount.bind(this);
-        // console.log(props);
     }
-
-    // componentDidMount() {
-    //     console.log(this.props);
-    //     this.props.fetchUsers();
-    // }
-        
+       
     render() {
         const {data, fetchUsers} = this.props
         console.log(data);
         return(
-            <div className='container'>
+            <div>
                 <Button 
                     onClick = {fetchUsers}
                     text =  {'Fetch Users'}
                     className={'btn btn-blue'}
                 />
-                <div id={'users'}>
+                <div id={'users'} className='space-list-items'>
                     {data.users.map((user, i) => {
                         return <UserItem
                             key={i}

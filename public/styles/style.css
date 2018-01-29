@@ -1,91 +1,153 @@
-html, body {
-    height: 100%;
-  }
-  
-  body {
-    font-family: "Roboto", "helvetica neue", sans-serif;
-    margin: 0;
-  }
-  
-  nav {
-    height: 50px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav, .btn.btn-blue {
-    background-color: #55acee;
-  }
-  
-  nav a {
-    margin: 0 50px;
-    font-size: 15px;
-    outline: none;
-    color: #FFF;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .container {
-    width: 350px;
-    margin: 10px auto 40px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #users {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  }
-  
-  .btn {
-    border: 0;
-    padding: 15px;
-    margin: 10px;
-    width: 40%;
-    font-size: 15px;
-    outline: none;
-    color: #FFF;
-    font-weight: bold;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .btn.btn-blue {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  }
-  
-  .btn.btn-blue:hover {
-    background-color: #6FC6FF;
-  }
-  
-  .box {
-    display: flex;
-    width: 700px;
-    align-items: center;
-    border-right: 1px solid #eee;
-    border-top: 1px solid #eee;
-    border-left: 1px solid #eee;
-    text-decoration: none;
-  }
-  
-  .box:last-child {
-    border-bottom: 1px solid #eee;
-  }
-  
-  img {
-    padding: 10px;
-    border-radius: 50%;
-    float: left;
-  }
-  
-  span {
-    text-align: center;
-    color: #333;
-    margin-left: 20px;
-  }
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav li {
+  margin-right: 15px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #d0021b;
+}
+
+.popular-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.popular-item {
+  margin: 20px;
+  text-align: center;
+}
+
+.space-list-items {
+  margin-bottom: 7px;
+}
+
+.avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.li-active {
+  color: #d0021b
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none; 
+  opacity: .65;
+  box-shadow: none;
+}
+
+.box {
+  padding: 10px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-container input[type=text] {
+  width: 305px;
+  height: 44;
+  padding-left: 15px;
+  border: 0;
+  background-color: transparent;
+  line-height: 39px;
+  font-size: 15.5px;
+  color: #d0021b;
+  letter-spacing: -1px;
+}
+
+input {
+  vertical-align: middle;
+}
+
+.search-container {
+  width: 100%;
+  position: relative;
+}
+
+.search-container .search-area {
+  width: 304px;
+  height: 43px;
+  margin: 6px 0 33px;
+  position: relative;
+  border: solid 1px #d0021b;
+}
+
+.search-container .signin-area {
+  width: 540px;
+  height: 44px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 2px;
+
+}
+
+.search-container .signin-area .email, .search-container .signin-area .password {
+  height: 44px;
+  border: solid 1px #d0021b;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+
+.search-container .signin-area .btnLogin, .search-container .signin-area .btnQuery {
+  width: 60px;
+  height: 35px;
+  display: inline-block;
+  background-color: #5c636b;
+  border: 0;
+  line-height: 31px;
+  color: #fff;
+  letter-spacing: -0.75px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search-container .signin-area .btnLogin {
+  margin-right: 10px;
+}
+
+input, button {
+  vertical-align: middle;
+}
+
+.search-container .signin-area .btnLogin:hover, .search-container .signin-area .btnQuery:hover{
+  background-color: #353a44;
+}
