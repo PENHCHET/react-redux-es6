@@ -19,6 +19,8 @@ import PaginationApp from './components/PaginationApp'
 import Footer from './components/footer/Footer'
 import Search from './components/search/Search'
 import Header from './components/header/Header';
+import About from './components/about/About'
+import Help from './components/help/Help'
 
 render(
     <Provider store={UserStore}>
@@ -32,6 +34,8 @@ render(
                     <Route path='/users' component={Users} />
                     <Route path='/popular' component={Popular} />
                     <Route path='/paginationApp' component={PaginationApp} />
+                    <Route path='/about' component={About} />
+                    <Route path='/help' component={Help} />
                     <Route render={function() {
                         return `Not Found`
                     }} />
